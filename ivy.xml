@@ -21,8 +21,8 @@
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
         organisation="introsde"
-        module="lab08"
-        status="integration">
+        module="final-WeatherAdapter"
+        status="production">
 	</info>
 	
 	<dependencies>
