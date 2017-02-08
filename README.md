@@ -1,6 +1,6 @@
 # Weather Adapter service
 
-This is service that provides weather information to my application using openweathermap.org service.
+This service provides weather information to my application using openweathermap.org.
 
 ## API Endpoints
 
