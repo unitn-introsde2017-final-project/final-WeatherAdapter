@@ -66,4 +66,4 @@ We specify the city, my token for authorization and also the units that is Metri
 
 ## Copyright
 
-&copy; Made by Sándor Tibor Nagy as the final project for Introduction to Service Design and Engineering course 2016/2017 at [UNITN](http://www.unitn.it/)
+&copy; Sándor Tibor Nagy as the final project for Introduction to Service Design and Engineering course 2016/2017 at [UNITN](http://www.unitn.it/)
