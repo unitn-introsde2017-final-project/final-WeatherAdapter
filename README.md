@@ -26,7 +26,7 @@ soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
 </soap:Envelope>
 ```
 
-For this we get a response that contains the Temperature, Wind strength and Rain possibility to the give city:
+For this we get a response that contains the *Temperature*, *Wind strength* and *Rain possibility* to the give city:
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -44,12 +44,12 @@ The response means that the:
 * The Wind strength is 3 m/s
 * There was no rain in the last 3 hours and no rain expected.
 
-The value -100 is the default and represents that no data was available for the given metric.
+The value `-100` is the default and represents that no data was available for the given metric.
 
 
 ## OpenWeatherMap
 
-This service uses the [openweathermap.org](openweathermap.org) service with the JSON API, but the information is provided for the health application using SOAP.
+This service uses the [openweathermap.org](http://openweathermap.org) service with the JSON API, but the information is provided for the health application using SOAP.
 
 The documentation for the current weather information can be found [here](http://openweathermap.org/current).
 
@@ -66,4 +66,4 @@ We specify the city, my token for authorization and also the units that is Metri
 
 ## Copyright
 
-This service was made by Sándor Tibor Nagy as the final project for Introduction to Service Design and Engineering class at UNITN. 2016/2017
+&copy; Made by Sándor Tibor Nagy as the final project for Introduction to Service Design and Engineering course 2016/2017 at [UNITN](http://www.unitn.it/)
