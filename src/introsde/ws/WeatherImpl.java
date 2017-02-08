@@ -40,13 +40,27 @@ public class WeatherImpl implements Weather {
 			Response r = service.request().accept(mediaType).get(Response.class);
 			
 			if(r.getStatus() == 200) {
-				result = ""; //new String();
 				String output = r.readEntity(String.class);
 				JSONObject json_data = new JSONObject();
 				json_data = new JSONObject(output);
-				Integer temp = json_data.getJSONObject("main").getInt("temp");
-				result += temp;
-				System.out.println(temp);
+				Integer temp = -100, wind = -100, rain = -100;
+				try {
+					temp = json_data.getJSONObject("main").getInt("temp");
+				} catch (Exception e) {
+					System.out.println("Exception: " + e.toString());
+				}
+				try {
+					wind = json_data.getJSONObject("wind").getInt("speed");
+				} catch (Exception e) {
+					System.out.println("Exception: " + e.toString());
+				}
+				try {
+					rain = json_data.getJSONObject("rain").getInt("3h");
+				} catch (Exception e) {
+					System.out.println("Exception: " + e.toString());
+				}
+				result = temp + "|" + wind + "|" + rain;
+				System.out.println(result);
 				System.out.println(output);
 				System.out.println("--> Request done OK");
 			} else {
