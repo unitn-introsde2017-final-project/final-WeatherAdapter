@@ -14,7 +14,7 @@ The only available function is getWeatherInformationByCity used like this:
 
 An example request:
 
-```
+```xml
 <soap:Envelope
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
 soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
@@ -28,7 +28,7 @@ soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
 
 For this we get a response that contains the Temperature, Wind strength and Rain possibility to the give city:
 
-```
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
     <S:Body>
