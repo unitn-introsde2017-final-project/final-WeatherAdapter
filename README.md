@@ -9,7 +9,7 @@ The WSDL for this service can be found here:
 
 #### ws/weather - getWeatherInformationByCity
 
-In the request we can ask weather information to a location which is given by a City and Country code.
+In the request we can ask weather information to a location which is given by a City and Country code.  
 The only available function is getWeatherInformationByCity used like this:
 
 An example request:
